@@ -1,21 +1,30 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Header from "./pages/Header";
-import HomePage from "./pages/HomePage";
-import Loyaout from "./pages/Loyaout";
-import ContextFunction from "./pages/Kontext";
-
-function App() {
-  console.log("asdasd");
-  return (
-    <ContextFunction>
+import "./App.css";
+import Header from "./components/Header/Header";
+import HomePage from "./page/HomePage";
+import About from "./page/About";
+import Contact from "./page/Contact";
+import Cart from "./page/Cart";
+import Profile from "./page/Profile";
+import CartContextProvider from "./store/CartContext";
+function App(){
+  return(
+    <div className="App">
       <BrowserRouter>
-        <Loyaout>
+      <Header/>
+      <div style={{padding:" 0 20%"}}>
+        <CartContextProvider>
           <Routes>
-            <Route path="/" element={<HomePage />} />
+            <Route path="/"element={<HomePage/>}/>
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+              <Route path="/cart" element={<Cart />} />
+              <Route path="/profile" element={<Profile />} />
           </Routes>
-        </Loyaout>
+        </CartContextProvider>
+      </div>
       </BrowserRouter>
-    </ContextFunction>
-  );
+    </div>
+  )
 }
 export default App;
