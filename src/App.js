@@ -1,11 +1,11 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header/Header";
-import HomePage from "./page/HomePage";
-import About from "./page/About";
-import Contact from "./page/Contact";
-import Cart from "./page/Cart";
-import Profile from "./page/Profile";
+import HomePage from "./pages/HomePage";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Cart from "./pages/Cart";
+import Profile from "./pages/Profile";
 import CartContextProvider from "./store/CartContext";
 function App(){
   return(
