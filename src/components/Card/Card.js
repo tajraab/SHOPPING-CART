@@ -3,13 +3,13 @@ import "./Card.css";
 import React, { useState } from "react";
 
 function Card() {
-  const [selectedColor, setSelectedColor] = useState("#456ABD"); // Podesite početnu boju prema vašem izboru
+  const [selectedColor, setSelectedColor] = useState("#456ABD"); 
   const [selectedSize, setSelectedSize] = useState("M");
 
   const colorOptions = [
     { color: "lightgrey", img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/t-shirt-large2.png" },
     { color: "#456ABD", img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/t-shirt-large.png" },
-    {
+    { 
       color: "#EAA523",
       img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/t-shirt-large3.png",
     },
