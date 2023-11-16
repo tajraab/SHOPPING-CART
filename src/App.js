@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 import Cart from "./pages/Cart";
 import Profile from "./pages/Profile";
 import CartContextProvider from "./store/CartContext";
+import Card from "./components/Card/Card";
 function App(){
   return(
     <div className="App">
