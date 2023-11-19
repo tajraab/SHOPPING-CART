@@ -9,3 +9,11 @@
     height: 20vh;
     display: flex;
   }
+  .first-cont {
+    max-width: 20%;
+    height: 100%;
+  }
+  .first-cont img {
+    max-width: 100%;
+    max-height: 100%;
+  }
