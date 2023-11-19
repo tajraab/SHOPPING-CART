@@ -8,7 +8,7 @@ import Cart from "./pages/Cart";
 import Profile from "./pages/Profile";
 import CartContextProvider from "./store/CartContext";
 import Card from "./components/Card/Card";
-import Footer from "./components/footer/Footer";
+import Footer from "./components/Footer/Footer";
 function App(){
   return(
     <div className="App">
