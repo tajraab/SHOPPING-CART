@@ -28,3 +28,24 @@ function Card({ product, addToCart }) {
           <p style={{ cursor: "pointer" }} onClick={decrease}>
             -
           </p>
+          <p>{quantity}</p>
+          <p style={{ cursor: "pointer" }} onClick={increase}>
+            +
+          </p>
+        </div>
+        <div style={{ width: "40px" }}>
+          {product.discount && <h4>{product.discount}%</h4>}
+        </div>
+        <div
+          className="quantity"
+          onClick={addToCart}
+          style={{ width: "100px", cursor: "pointer", fontWeight: "bolder" }}
+        >
+          <p>Add to cart</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Card;
