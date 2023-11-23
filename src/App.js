@@ -10,20 +10,20 @@ import CartContextProvider from "./store/CartContext";
 //import Card from "./components/Card/Card";
 import Footer from "./components/Footer/Footer";
 import { Toaster } from "react-hot-toast";
-function App(){
-  return(
+function App() {
+  return (
     <div className="App">
       <BrowserRouter>
-      <Header/>
-      <div style={{padding:" 0 20%"}}>
         <CartContextProvider>
-          <Routes>
-            <Route path="/"element={<HomePage/>}/>
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
+          <Header />
+          <div style={{ padding: "0 20%", minHeight: "66.5vh" }}>
+            <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
               <Route path="/cart" element={<Cart />} />
               <Route path="/profile" element={<Profile />} />
-              </Routes>
+            </Routes>
           </div>
           <Toaster />
           <Footer />
