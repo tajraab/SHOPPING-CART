@@ -23,11 +23,14 @@ function App(){
             <Route path="/contact" element={<Contact />} />
               <Route path="/cart" element={<Cart />} />
               <Route path="/profile" element={<Profile />} />
-          </Routes>
+              </Routes>
+          </div>
+          <Toaster />
+          <Footer />
         </CartContextProvider>
-      </div>
       </BrowserRouter>
     </div>
-  )
+  );
 }
+
 export default App;
