@@ -9,7 +9,7 @@ import Profile from "./pages/Profile";
 import CartContextProvider from "./store/CartContext";
 //import Card from "./components/Card/Card";
 import Footer from "./components/Footer/Footer";
-import { Toaster } from "react-hot-toast";
+// import { Toaster } from "react-hot-toast";
 function App() {
   return (
     <div className="App">
@@ -25,7 +25,7 @@ function App() {
               <Route path="/profile" element={<Profile />} />
             </Routes>
           </div>
-          <Toaster />
+          {/* <Toaster /> */}
           <Footer />
         </CartContextProvider>
       </BrowserRouter>
