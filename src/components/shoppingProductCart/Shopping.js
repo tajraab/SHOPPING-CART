@@ -23,23 +23,25 @@ function Shopping({ product, removeFromCart }) {
             <h4>{product.title}</h4>
             <h5 id="green-underline" onClick={removeFromCart}>
               Remove
-              </h5>
-      </div>
-      <div className="third-cont">
-        <h4>{Number(product.price)}$</h4>
-        <div className="quantity">
-          <p style={{ cursor: "pointer" }} onClick={decrease}>
-            -
-          </p>
-          <p>{quantity}</p>
-          style={{ cursor: "pointer" }} onClick={increase}>
-            +
-          </p>
+            </h5>
+          </div>
+          <div className="third-cont">
+            <h4>{Number(product.price)}$</h4>
+            <div className="quantity">
+              <p style={{ cursor: "pointer" }} onClick={decrease}>
+                -
+              </p>
+              <p>{quantity}</p>
+              <p style={{ cursor: "pointer" }} onClick={increase}>
+                +
+              </p>
+            </div>
+            <div style={{ width: "40px" }}>
+              {product.discount && <h4>{product.discount}%</h4>}
+            </div>
+          </div>
         </div>
-        <div style={{ width: "40px" }}>
-          {product.discount && <h4>{product.discount}%</h4>}
-        </div>
-      </div>
-    </div>
-  );
-}
+      );
+    }
+    
+    export default Card;
