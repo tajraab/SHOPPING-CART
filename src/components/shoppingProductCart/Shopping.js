@@ -14,4 +14,12 @@ function Shopping({ product, removeFromCart }) {
     const decrease = () => {
       if (quantity > 0) setQuantity(quantity - 1);
     };
-  
+    return (
+        <div className="main-cont">
+          <div className="first-cont">
+            <img src={product.imageURL} alt={product.title} />
+          </div>
+          <div className="second-cont">
+            <h4>{product.title}</h4>
+            <h5 id="green-underline" onClick={removeFromCart}>
+              Remove
