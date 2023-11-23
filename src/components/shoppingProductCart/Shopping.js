@@ -10,3 +10,8 @@ function Shopping({ product, removeFromCart }) {
       if (quantity !== max) {
         setQuantity(quantity + 1);
       }
+    };
+    const decrease = () => {
+      if (quantity > 0) setQuantity(quantity - 1);
+    };
+  
