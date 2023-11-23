@@ -44,4 +44,4 @@ function Shopping({ product, removeFromCart }) {
       );
     }
     
-    export default Card;
+    export default Shp;
