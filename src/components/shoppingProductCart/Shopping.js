@@ -32,3 +32,14 @@ function Shopping({ product, removeFromCart }) {
             -
           </p>
           <p>{quantity}</p>
+          style={{ cursor: "pointer" }} onClick={increase}>
+            +
+          </p>
+        </div>
+        <div style={{ width: "40px" }}>
+          {product.discount && <h4>{product.discount}%</h4>}
+        </div>
+      </div>
+    </div>
+  );
+}
